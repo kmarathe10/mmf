@@ -23,7 +23,7 @@ This will train the `mmbt` model on the dataset and generate the checkpoints and
 
 Next run evaluation on the validation set:
 ```
-mmf_run config=projects/hateful_memes/configs/mmbt/defaults.yaml model=mmbt dataset=hateful_memes training.run_type=val resume_file=./save/mmbt_final.pth
+mmf_run config=projects/hateful_memes/configs/mmbt/defaults.yaml model=mmbt dataset=hateful_memes run_type=val resume_file=./save/mmbt_final.pth
 ```
 This will give you the performance of your model on the validation set. The metrics are AUROC, ACC, Binary F1 etc.
 
